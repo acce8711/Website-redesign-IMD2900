@@ -24,11 +24,11 @@ a
 ul
 {
     padding-left: 0;
+    list-style-type: none;
 }
 
 .header li 
 {
-    list-style-type: none;
     display: inline-block;
 }
 
@@ -211,6 +211,31 @@ footer .creditsSocials
 }
 
 /*Sidebar navigation*/
+.collCatalogue
+{
+    position: absolute;
+    max-height: 100vh;
+    max-width: 30vh;
+    padding: 30px;
+}
+
+.collMain
+{
+    margin-left: 30vh;
+    border-left: solid black 1px;
+}
+
+.collCategory 
+{
+    display: inline-block;
+    padding: 20px 15px;
+}
+
+.collSubcat
+{
+    
+}
+
 .categoryImg
 {
     max-width: 400px;
