@@ -54,7 +54,7 @@ ul
     margin: 0 auto;
     max-width: 1170px;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -62,18 +62,61 @@ ul
 {
     width: 450px;
     display: flex;
-    align-items: baseline;
     justify-content: space-between;
+    align-items: center;
 }
 
-.navBar .searchBox
+.navBar .navLinks
 {
-    border-radius: 0px;
-    padding: 0 30px 0 15px;
+    width: 400px;
+    display: block;
+    justify-content: end;
+}
+
+.navLinkList ul
+{
+    float: right;
+    margin: 0;
+    max-width: inherit;
+}
+
+.navLinkList li
+{
+    display: inline;
+    margin-left: 25px;
+}
+
+.searchBar
+{
+    margin-left: 50px;
+    height: 30px;
+    align-items: baseline;
+}
+
+.searchBar #searchField
+{
+    align-items: baseline;
+    border-radius: 15px 0 0 15px;
+    padding: 5px;
+    height: inherit;
+    padding-right: 30px;
+    margin: 0;
+    border:0;
+}
+
+.searchBar .btn 
+{
+    position: absolute;
+    height: inherit;
+    border-radius: 0 15px 15px 0px;
+    border-color: aquamarine;
+    color: black;
+    background-color: aquamarine;
+    font-size: 12px;
 }
 
 
-.navBar .row-2
+.navBar .row-2 ul
 {
     margin: 0 auto;
     max-width: 1170px;
@@ -82,10 +125,8 @@ ul
     justify-content: space-between;
 }
 
-.navBar .navItems li
-{
 
-}
+
 
 /* Banner */
 
@@ -101,6 +142,15 @@ ul
 {
     display: flex;
     justify-content: center;
+}
+
+.shopBtn
+{
+    background-color: aliceblue;   
+}
+
+.shopBtn {
+    background-color: aliceblue;
 }
 
 /* Reduced Items Carousel */
