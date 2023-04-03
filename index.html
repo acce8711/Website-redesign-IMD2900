@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <title>Habitat GO ReStore Online - Habitat for Humanity Greater Ottawa Restore</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Header -->
+        <section class="header">
+            <nav class="topNav">
+                <div class="navItems-row-1">
+                    <div class="logo">
+                        <a href="index.html" class="restoreLogo">
+                            <img src="Images/ReStore Logo.avif" alt="Logo of Habitat for Humanity Greater Ottawa Restore">
+                        </a>
+                    </div>
+                    <div class="search">
+                        <form action="" class="searchBar">
+                            <input type="text" id = "searchField">
+                            <input type="button">
+                            <!--or put a button -->
+                        </form>
+                    </div>
+                    <div class="navLinks">
+                        <li><a href="#">Donate Items</a></li>
+                        <li><a href="#">EN | FR</a></li>
+                        <li>
+                            <a href="#">
+                            <img src="Images/cart.png" alt="Logo of a cart">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="Images/user.png" alt="Logo of a person">                      
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <div class="navItems-row-2">
+                    <li><a href="#">Shop All</a></li>
+                    <li><a href="#">Category 1</a></li>
+                    <li><a href="#">Category 2</a></li>
+                    <li><a href="#">Category 3</a></li>
+                    <li><a href="#">Category 4</a></li>
+                    <li><a href="#">Category 5</a></li>
+                    <li><a href="#">Category 6</a></li>
+                    <li><a href="#">Category 7</a></li>
+                    <li><a href="#">Category 8</a></li>
+                </div>
+            </nav>
+        </section>
+        <!-- call to action banner -->
+        <section class="mainBanner">
+            <div class="bannerItems">
+                <div class="item">
+                    <button class="shopBtn">Shop</button>
+                    <button class="donateBtn">Donate</button>
+                </div>
+            </div>
+        </section>
+        <!-- Reduced Items -->
+        <section class="carouselReducedItems">
+            <!--yeah I need to look into how to do this-->
+            <div class="carouselItems">
+                <div class="item">
+                    <img src="" alt="">
+                </div>
+                <div class="item">
+                    <img src="" alt="">
+                </div>
+                <div class="item">
+                    <img src="" alt="">
+                </div>
+                <div class="item">
+                    <img src="" alt="">
+                </div>
+                <div class="item">
+                    <img src="" alt="">
+                </div>
+                <div class="item">
+                    <img src="" alt="">
+                </div>
+                <div class="item">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Gift Card -->
+        <section class="giftCard">
+            <div class="giftCardItems">
+                <div class="items">
+                    <div class="item">
+                        <div class="giftCardImg">
+                            <img src="Images/habitat_gift_card_10_Page_2_1400x.png" alt="Image of a gift card">
+                        </div>
+                        <div class="giftCardInfo">
+                            <p class="description">
+                                This is a gift card.
+                            </p>
+                            <select name="" id="" class="giftCardSelect">
+                                <option selected>$10.00 CAD</option>
+                                <option >$25.00 CAD</option>
+                                <option >$50.00 CAD</option>
+                                <option >$100.00 CAD</option>
+                            </select>
+                            <div class="quantitySelect">
+                                <button class="minusBtn">-</button>
+                                <input type="text" class="quantityText" value="1" min="1">
+                                <button class="plusBtn">+</button>
+                            </div>
+                            <div class="price">
+                                <span class="priceText"></span>
+                            </div>
+                            <div class="purchaseButtons">
+                                <button id="addToCart">Add to Cart</button>
+                                <button id="buyButton">Buy it Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hours and Location -->
+        <section class="hoursLocation">
+            <div class="stores">
+                <div class="location">
+                    <div class="storeImg">
+                        <img src="" alt="Image of Stittsville ReStore GO shop">
+                    </div>
+                    <div class="storeInfo">
+                        <h5>Stittsville Store</h5>
+                            <div class="addressInfo">
+                                <img src="Images/pin.png" alt="Image of location icon">
+                                <span class="address">100 Address Street</span>
+                            </div>
+                            <div class="phoneInfo">
+                                <img src="Images/pin.png" alt="Image of location icon">
+                                <span class="address">100 Address Street</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maps">
+                <img src="Images/ditto.jpg" alt="Image of map location of Stittsville store">
+                    <!-- could maybe embed google maps on our page-->
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="signUp">
+                <span class="tagline">Be the first to know about special deals!</span>
+                <form action="">
+                    <input type="email" value="email@example.com">
+                    <button class="subscribe">Submit</button>
+                </form>
+            </div>
+            <div class="footerInfo">
+                <div class="AboutUs"></div>
+                <div class="Info"></div>
+                <div class="ContactUs"></div>
+            </div>
+            <div class="creditsSocials">
+                <span class="credits">
+                    <img src="" alt="Copyright logo">
+                    Habitat for Humanity Greater Ottawa ReStore
+                </span>
+                <div class="socialIcons">
+                    <a href="#" target="_blank">
+                        <img src="Images/facebook.png" alt="Image of Facebook icon" class="iconLink">
+                    </a>
+                      <a href="#" target="_blank">
+                        <img src="Images/instagram.png" alt="Image of Instagram icon" class="iconLink">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
