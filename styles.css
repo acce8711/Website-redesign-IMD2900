@@ -1,0 +1,151 @@
+/*  Universal styling */
+*
+{
+    box-sizing: border-box;
+}
+
+body 
+{
+    background-color: grey;
+}
+
+.container 
+{
+    max-width: 1170px;
+}
+
+
+a 
+{
+    color: black;
+    text-decoration: none;
+}
+
+ul
+{
+    padding-left: 0;
+}
+
+.header li 
+{
+    list-style-type: none;
+    display: inline-block;
+}
+
+/* Header/navbar */
+.navBar 
+{
+    margin: 0 auto;
+}
+
+.header 
+{
+    margin-top: 10px;
+}
+
+/*ReStore logo*/
+.logo img 
+{
+    max-width: 200px;
+}
+
+.navBar .row-1
+{
+    margin: 0 auto;
+    max-width: 1170px;
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.navBar .row-1 .navLinks
+{
+    float:right;
+}
+
+.navBar .row-2
+{
+    margin: 0 auto;
+    max-width: 1170px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBar .navItems li
+{
+
+}
+
+/* Banner */
+
+.mainBanner 
+{
+    background-image: url("Images/ditto.jpg");
+    margin: 0 auto;
+    padding-top: 500px;
+    padding-bottom: 100px;
+}
+
+.mainBanner .bannerItems
+{
+    display: flex;
+    justify-content: center;
+}
+
+/* Reduced Items Carousel */
+
+/* Gift Card */
+
+/* Hours and Location */
+
+/* Footer */
+
+footer
+{
+
+}
+
+footer .signUp 
+{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .signUp .tagline 
+{
+    margin-right: 10px;
+}
+
+footer .footerInfo 
+{
+    margin: 0 auto;
+    max-width: 1170px;
+    display: flex;
+    justify-content:baseline;
+}
+
+footer .footerInfo ul 
+{
+    padding:0;
+}
+footer .footerInfo li 
+{
+    list-style-type: none;
+}
+
+footer .footerInfo div {
+    margin: 50px;
+    margin-right: 100px;
+    margin-left: 0;
+}
+
+footer .creditsSocials
+{
+    margin: 0 auto;
+    max-width: 1170px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:space-between;
+}
