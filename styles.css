@@ -209,3 +209,9 @@ footer .creditsSocials
     display: flex;
     justify-content:space-between;
 }
+
+/*Sidebar navigation*/
+.categoryImg
+{
+    max-width: 400px;
+}
