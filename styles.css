@@ -2,6 +2,8 @@
 *
 {
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 
 
@@ -42,6 +44,11 @@ li
     position:sticky;
     position: -webkit-sticky;
     top:0;
+<<<<<<< Updated upstream
+    z-index: 1;
+=======
+    z-index: 2;
+>>>>>>> Stashed changes
 }
 
 .navBar 
@@ -169,6 +176,35 @@ li
 
 /* Reduced Items Carousel */
 
+.carouselReducedItems
+{
+    max-width: 1170px;
+    margin:0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.carouselItems
+{
+    border: 1px solid black;
+}
+
+.carouselInner
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carousel-item
+{
+    width: 100px;
+}
+
+.d-block
+{
+    border: 1px solid black;
+}
+
+
 /* Gift Card */
 
 .giftCard
@@ -176,6 +212,8 @@ li
     border: 1px solid black;
     margin:0 auto;
     background-color: aliceblue;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .giftCardItems .item
@@ -190,7 +228,9 @@ li
 {
     flex:50%;
     width: 500px;
-    padding: 10px;
+    padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .giftCardImg img
@@ -200,8 +240,101 @@ li
 
 .giftCardInfo
 {
-    flex:40%;
+    flex:50%;
+    padding-right: 15px;
 }
+
+.giftCardInfo .description
+{
+    margin-bottom: 50px;
+}
+
+.giftCardSelect
+{
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px 15px 5px 15px;
+    width:100%;
+    margin-bottom: 15px;
+}
+
+.quantitySelect
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price
+{
+    margin-right: 15px;
+}
+
+.chooseQuantityBox
+{
+    margin-right: 30px;
+}
+
+.chooseQuantityBox input
+{
+    align-items: baseline;
+    padding: 5px 0 5px 0;
+    height: inherit;
+    margin: 0;
+    border: 0;
+    width:50px;
+    text-align: center;
+}
+
+.chooseQuantityBox .plusBtn
+{
+    border: none;
+    float:right;
+    height: 34px;
+    margin-left: 0;
+    border-radius: 0 15px 15px 0px;
+    border-color: aquamarine;
+    color: black;
+    background-color: aquamarine;
+    font-size: 12px;
+    width:30px;
+}
+
+.chooseQuantityBox .minusBtn
+{
+    border: none;
+    margin-right: 0;
+    float:left;
+    height: 34px;
+    border-radius: 15px 0 0 15px;
+    border-color: aquamarine;
+    color: black;
+    background-color: aquamarine;
+    font-size: 12px;
+    width:30px;
+}
+
+.purchaseButtons
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.purchaseButtons button
+{
+    border:none;
+    border-radius: 5px;
+    width:100%;
+    height:40px;
+    padding: 5px 15px 5px 15px;
+    margin-left: 5px;
+}
+
+.purchaseButtons #addToCart 
+{
+    margin-left: 0 !important;
+}
+
+
 /* Hours and Location */
 
 .hoursLocations
