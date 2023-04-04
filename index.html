@@ -84,7 +84,7 @@
       </div>
     </section>
     <!-- container for main content will have width of 1170px or 1200px -->
-    <div class="container">
+    <div class="containerCustom">
       <!-- Reduced Items -->
       <section class="carouselReducedItems">
         <!--yeah I need to look into how to do this-->
@@ -115,7 +115,6 @@
       <!-- Gift Card -->
       <section class="giftCard">
         <div class="giftCardItems">
-          <div class="items">
             <div class="item">
               <div class="giftCardImg">
                 <img
@@ -124,6 +123,7 @@
                 />
               </div>
               <div class="giftCardInfo">
+                <h2>Buy a Gift Card</h2>
                 <p class="description">This is a gift card.</p>
                 <select name="" id="" class="giftCardSelect">
                   <option selected>$10.00 CAD</option>
@@ -145,50 +145,75 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
+
+
       <!-- Hours and Location -->
-      <section class="hoursLocation">
+      <section class="hoursLocationsSection">
+        <h2>Hours and Locations</h2>
+        <div class="hoursLocations">
+      
         <div class="stores">
-          <div class="location">
-            <div class="storeImg">
-              <img src="" alt="Image of Stittsville ReStore GO shop" />
+          <div class="store">
+            <div class="storeImage">
+              <img src="Images/Stittsville_480x480.png" alt="Image of Stittsville Restore"/>
             </div>
             <div class="storeInfo">
-              <h5>Stittsville Store</h5>
-              <div class="addressInfo">
-                <img src="Images/pin.png" alt="Image of location icon" />
-                <span class="address">100 Address Street</span>
-              </div>
-              <div class="phoneInfo">
-                <img src="Images/pin.png" alt="Image of location icon" />
-                <span class="address">100 Address Street</span>
-              </div>
+              <h5 class="storeName">Stittsville ReStore</h5>
+              <ul>
+                <li>
+                  <img src="Images/pin.png" alt="Image of icon pin">
+                  3 Iber Road, Stittsville, Ontario, Canada K2S 1EG
+                </li>
+                <li>
+                  <img src="Images/call-phone@2x.png" alt="Image of phone icon">
+                  343-545-0481
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="store">
+            <div class="storeImage">
+              <img src="Images/Trainyards_480x480.png" alt="Image of Stittsville Restore"/>
+            </div>
+            <div class="storeInfo">
+              <h5 class="storeName">Trainyards ReStore</h5>
+              <ul>
+                <li>
+                  <img src="Images/pin.png" alt="Image of icon pin">
+                  768 Belfast Road, Ottawa, Ontario, Canada K1G 0Z5 
+                </li>
+                <li>
+                  <img src="Images/call-phone@2x.png" alt="Image of phone icon">
+                  343-545-0481
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+
         <div class="maps">
-          <img
-            width="400px"
-            src="Images/ditto.jpg"
-            alt="Image of map location of Stittsville store"
-          />
-          <!-- could maybe embed google maps on our page-->
+          <div>
+            <img src="Images/Stittville ReStore Map.png" alt="Image of Google Maps location for Stittsville ReStore"/>
+          </div>
         </div>
+      </div>
+
       </section>
     </div>
     <!-- Footer -->
 
-    <hr />
 
     <footer>
       <div class="signUp">
         <span class="tagline">Be the first to know about special deals!</span>
-        <form action="">
-          <input type="email" value="email@example.com" />
-          <button class="subscribe">Submit</button>
-        </form>
+        <div class="signUpBox">
+          <form action="">
+            <input type="email" value="email@example.com" />
+            <button class="subscribe btn">Submit</button>
+          </form>
+        </div>
       </div>
 
       <hr />
