@@ -4,14 +4,12 @@
     box-sizing: border-box;
 }
 
-body 
-{
-    background-color: grey;
-}
 
-.container 
+.containerCustom 
 {
-    max-width: 1170px;
+    max-width: 100%;
+    margin:0 auto;
+    padding: 0 auto;
 }
 
 
@@ -27,20 +25,31 @@ ul
     list-style-type: none;
 }
 
+li
+{
+    list-style-type: none;
+}
+
 .header li 
 {
     display: inline-block;
 }
 
 /* Header/navbar */
-.navBar 
+
+.header
 {
-    margin: 0 auto;
+    position:sticky;
+    position: -webkit-sticky;
+    top:0;
 }
 
-.header 
+.navBar 
 {
-    margin-top: 10px;
+    height: inherit;
+    margin: 0 auto;
+    background-color: grey;
+    padding-top:5px;
 }
 
 /*ReStore logo*/
@@ -144,26 +153,122 @@ ul
     justify-content: center;
 }
 
-.shopBtn
+.bannerItems .item .btn
 {
-    background-color: aliceblue;   
+    height:60px;
+    width: 120px;
+    border-radius: 15px;
+    margin:10px;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 15px;
+    background-color: rgb(85, 85, 85);
+    color: white;   
 }
 
-.shopBtn {
-    background-color: aliceblue;
-}
 
 /* Reduced Items Carousel */
 
 /* Gift Card */
 
+.giftCard
+{
+    border: 1px solid black;
+    margin:0 auto;
+    background-color: aliceblue;
+}
+
+.giftCardItems .item
+{
+    max-width: 1170px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+}
+
+.giftCardImg
+{
+    flex:50%;
+    width: 500px;
+    padding: 10px;
+}
+
+.giftCardImg img
+{
+    width: inherit;
+}
+
+.giftCardInfo
+{
+    flex:40%;
+}
 /* Hours and Location */
+
+.hoursLocations
+{
+    display: flex;
+    margin:0 auto;
+    max-width: 1170px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.hoursLocationsSection
+{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.hoursLocations .stores, .maps
+{
+    flex: 50%;
+}
+
+.storeImage
+{
+    max-width: 300px;
+}
+
+.storeImage img
+{
+    max-width: inherit;
+}
+
+.storeInfo li img
+{
+    max-width: 20px;
+}
+
+.store
+{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.store .storeInfo
+{
+    margin-left: 10px;
+}
+
+
+
+.maps div
+{
+   max-width: 600px;
+}
+
+.maps img
+{
+    max-width: inherit;
+}
+
 
 /* Footer */
 
 footer
 {
-
+    background-color: grey;
 }
 
 footer .signUp 
@@ -171,11 +276,35 @@ footer .signUp
     padding: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-footer .signUp .tagline 
-{
-    margin-right: 10px;
+.signUpBox {
+    margin-left: 50px;
+    height: 30px;
+    align-items: baseline;
+}
+
+.signUpBox input {
+    align-items: baseline;
+    border-radius: 15px 0 0 15px;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 30px;
+    margin: 0;
+    border: 0;
+}
+
+.signUpBox .btn {
+    position: absolute;
+    height: 30px;
+    border-radius: 0 15px 15px 0px;
+    border-color: aquamarine;
+    color: black;
+    background-color: aquamarine;
+    font-size: 12px;
 }
 
 footer .footerInfo 
@@ -190,26 +319,34 @@ footer .footerInfo ul
 {
     padding:0;
 }
+
 footer .footerInfo li 
 {
     list-style-type: none;
 }
 
-footer .footerInfo div {
+footer .footerInfo div 
+{
     margin: 50px;
     margin-right: 100px;
     margin-left: 0;
+}
+
+footer .footerInfo img
+{
+    width: 20px;
 }
 
 footer .creditsSocials
 {
     margin: 0 auto;
     max-width: 1170px;
-    margin-bottom: 20px;
+    padding: 20px;
     display: flex;
     justify-content:space-between;
 }
 
+<<<<<<< Updated upstream
 /*Sidebar navigation*/
 .collCatalogue
 {
@@ -251,4 +388,9 @@ footer .creditsSocials
 .categoryImg
 {
     max-width: 400px;
+=======
+footer .creditsSocials img
+{
+    width: 35px;
+>>>>>>> Stashed changes
 }
