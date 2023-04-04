@@ -21,7 +21,7 @@ function generateProductItems() {
         productLocation.innerHTML = "Product Location";
         productLocation.className = "productItemLocation";
         const productPrice = document.createElement("p");
-        productPrice.innerHTML = "Product Location";
+        productPrice.innerHTML = "Product Price";
         productPrice.className = "productItemPrice";
 
 
