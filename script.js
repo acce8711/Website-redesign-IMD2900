@@ -35,3 +35,6 @@ function generateProductItems() {
         element.appendChild(individualProduct);
     }
 }
+
+   
+      

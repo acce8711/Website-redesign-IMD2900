@@ -58,14 +58,6 @@ li
 
 /* Header/navbar */
 
-.header
-{
-    position:sticky;
-    position: -webkit-sticky;
-    top:0;
-    z-index: 1;
-}
-
 .navBar 
 {
     height: inherit;
@@ -87,6 +79,7 @@ li
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 15px;
 }
 
 .navBar .logoSearch
@@ -146,6 +139,11 @@ li
     font-size: 12px;
 }
 
+.navBar .row-2
+{
+    border-top: 1px solid #414141;
+    padding-top: 15px;
+}
 
 .navBar .row-2 ul
 {
@@ -198,33 +196,66 @@ li
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.carouselItems
-{
-    border: 1px solid black;
-}
 
-.carouselInner
+
+.carousel-inner
 {
     display: flex;
-    justify-content: space-evenly;
+    padding-left: 0px;
+    padding-right: 25px;
 }
 
 .carousel-item
 {
-    width: 100px;
+    display: block;
+    flex: 0 0 calc((100%)/4);
+    margin-right: 7px;
 }
 
-.d-block
+.img-div
 {
-    border: 1px solid black;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
+.img-div img
+{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item .card
+{
+    margin: 0px;
+}
+
+
+.carousel-control-prev, .carousel-control-next
+{
+    top: 35%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: #7d7d7d;
+}
+
+.carousel-control-prev
+{
+    transform: translateX(-100px);
+}
+
+.carousel-control-next
+{
+    transform: translateX(100px);
+}
 
 /* Gift Card */
 
 .giftCard
 {
-    border: 1px solid black;
     margin:0 auto;
     background-color: var(--gray);
     padding-bottom: 50px;
@@ -235,7 +266,6 @@ li
 {
     max-width: 1170px;
     margin: 0 auto;
-    border: 1px solid black;
     display: flex;
 }
 
@@ -310,7 +340,7 @@ li
     border-color: var(--darkorange);
     color: var(--white);
     background-color: var(--darkorange);
-    font-size: 12px;
+    font-size: 16px;
     width:30px;
 }
 
@@ -324,7 +354,7 @@ li
     border-color: var(--darkorange);
     color: var(--white);
     background-color: var(--darkorange);
-    font-size: 12px;
+    font-size: 16px;
     width:30px;
 }
 
@@ -353,6 +383,14 @@ li
 
 /* Hours and Location */
 
+.hoursLocationsSection
+{
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
 .hoursLocations
 {
     display: flex;
@@ -362,11 +400,6 @@ li
     margin-bottom: 50px;
 }
 
-.hoursLocationsSection
-{
-    max-width: 1170px;
-    margin: 0 auto;
-}
 
 .hoursLocations .stores, .maps
 {
