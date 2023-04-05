@@ -14,7 +14,7 @@
     --black: #111111;
     --gray: #e7e7e7;
     --blue: #00afd7;
-    --darkblue: #007996;
+    --darkblue: #00637b;
     --orange: #e45d1d;
     --darkorange: #cd5018;
     --neongreen: #c4d600;
@@ -54,6 +54,15 @@ li
 .header li 
 {
     display: inline-block;
+}
+
+button
+{
+    transition: opacity 0.5s !important;
+}
+button:hover
+{
+    opacity: 85%;
 }
 
 /* Header/navbar */
@@ -193,10 +202,9 @@ li
 {
     max-width: 1170px;
     margin:0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-
 
 .carousel-inner
 {
@@ -460,6 +468,12 @@ footer .signUp
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer .tagline
+{
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .signUpBox {
