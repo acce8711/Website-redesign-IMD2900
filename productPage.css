@@ -1,0 +1,30 @@
+.containerCustom
+{
+    margin: 0 auto;
+    width: 1170px;
+}
+
+li{
+    display: inline-block;
+}
+
+.product
+{
+    margin: 0 auto;
+    padding-top: 15px;
+    background-color: #eee;
+    border: 1px solid black;
+    display: flex;
+}
+
+.productImg
+{
+    border: 1px solid black;
+    width: 50%;
+}
+
+.productImg img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
