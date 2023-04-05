@@ -1,5 +1,6 @@
 /*Sidebar navigation*/
 
+/*
 .content
 {
     margin: 0 auto;
@@ -30,6 +31,39 @@
 {
     display: inline-block;
     padding: 40px 15px;
+}*/
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.contentItems {
+    width: 1170px;
+    border: 2px solid pink;
+    display: flex;
+}
+
+.collCatalogue {
+    width: 25%;
+    border: 2px solid purple;
+    padding: 80px 0;
+}
+
+.mainContent{
+    width: 75%;
+    border-left: 1px solid black;
+}
+
+.collMain {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.collCategoryItems{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .collCategory h4
@@ -42,12 +76,89 @@
     padding: 10px 0px 0px 10px;
 }
 
-.collSubcat li:hover, .collCatalogue li:hover
+.collSubcat li:hover, .collCatalogue li:hover, .breadcrumb:hover
 {
     text-decoration: underline;
 }
 
 .categoryImg
 {
-    max-width: 400px;
+    width: 100%;
+}
+
+
+/*Categories page items*/
+#individualCategories{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/*Products page items*/
+.products, .categories {
+    width: 95%;
+}
+
+/*breadcrumb trail styling*/
+.breadcrumbTrail {
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+#selectedBreadcrumbTrail{
+    font-weight: bold;
+}
+
+
+#individualProducts{
+    width: 100%;
+    border: 2px solid red;
+}
+
+.individualProduct {
+    position: relative;
+}
+
+.individualProductImg {
+    width: 100%;
+}
+
+.productItemName {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.productItemPrice {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.addToCartButton {
+    background-color: black;
+    color: white;
+    display: none;
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    backface-visibility: hidden;
+    opacity: 1;
+}
+
+.individualProduct:hover img, .individualProduct:hover h5, .individualProduct:hover  p {
+    opacity: 50%;
+}
+
+.individualProduct:hover .addToCartButton{
+    display: block;
+    cursor: pointer;
 }

@@ -13,22 +13,27 @@ function generateProductItems() {
         individualProduct.className = "individualProduct";
         const productImg = document.createElement("img");
         productImg.alt = "Image of product"
-        productImg.src = "Images/cart.png"
-        const productTitle = document.createElement("h3");
+        productImg.src = "Images/ditto.jpg"
+        productImg.className = "individualProductImg"
+        const productTitle = document.createElement("h5");
         productTitle.innerHTML = "Product Name";
         productTitle.className = "productItemName";
         const productLocation = document.createElement("p");
         productLocation.innerHTML = "Product Location";
         productLocation.className = "productItemLocation";
         const productPrice = document.createElement("p");
-        productPrice.innerHTML = "Product Price";
+        productPrice.innerHTML = "$20.99";
         productPrice.className = "productItemPrice";
+        const addToCart = document.createElement("button");
+        addToCart.className = "addToCartButton";
+        addToCart.innerHTML = "Add to Cart";
 
 
         individualProduct.appendChild(productImg);
         individualProduct.appendChild(productTitle);
         individualProduct.appendChild(productLocation);
         individualProduct.appendChild(productPrice);
+        individualProduct.appendChild(addToCart);
 
         //appending the button to the html 
         const element = document.getElementById("individualProducts");
