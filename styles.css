@@ -1,11 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 /*  Universal styling */
 *
 {
     box-sizing: border-box;
     margin:0;
     padding:0;
+    font-family: 'Lato', sans-serif;
 }
 
+:root
+{
+    --white: #ffffff;
+    --black: #111111;
+    --gray: #e7e7e7;
+    --blue: #00afd7;
+    --darkblue: #007996;
+    --orange: #e45d1d;
+    --darkorange: #cd5018;
+    --neongreen: #c4d600;
+}
 
 .containerCustom 
 {
@@ -14,17 +27,23 @@
     padding: 0 auto;
 }
 
+h2, h4 
+{
+    font-weight: 700;
+}
 
 a 
 {
-    color: black;
+    color: var(--black);
     text-decoration: none;
+    
 }
 
 ul
 {
     padding-left: 0;
     list-style-type: none;
+    
 }
 
 li
@@ -51,7 +70,7 @@ li
 {
     height: inherit;
     margin: 0 auto;
-    background-color: grey;
+    background-color: var(--blue);
     padding-top:5px;
 }
 
@@ -121,9 +140,9 @@ li
     position: absolute;
     height: inherit;
     border-radius: 0 15px 15px 0px;
-    border-color: aquamarine;
-    color: black;
-    background-color: aquamarine;
+    border-color: var(--orange);
+    color: var(--white);
+    background-color: var(--darkorange);
     font-size: 12px;
 }
 
@@ -165,8 +184,8 @@ li
     font-size: 24px;
     text-align: center;
     padding: 5px 15px;
-    background-color: rgb(85, 85, 85);
-    color: white;   
+    background-color: var(--darkorange);
+    color: var(--white);   
 }
 
 
@@ -207,7 +226,7 @@ li
 {
     border: 1px solid black;
     margin:0 auto;
-    background-color: aliceblue;
+    background-color: var(--gray);
     padding-bottom: 50px;
     padding-top: 50px;
 }
@@ -248,7 +267,7 @@ li
 .giftCardSelect
 {
     border-radius: 15px;
-    background-color: white;
+    background-color: var(--white);
     padding: 5px 15px 5px 15px;
     width:100%;
     margin-bottom: 15px;
@@ -288,9 +307,9 @@ li
     height: 34px;
     margin-left: 0;
     border-radius: 0 15px 15px 0px;
-    border-color: aquamarine;
-    color: black;
-    background-color: aquamarine;
+    border-color: var(--darkorange);
+    color: var(--white);
+    background-color: var(--darkorange);
     font-size: 12px;
     width:30px;
 }
@@ -302,9 +321,9 @@ li
     float:left;
     height: 34px;
     border-radius: 15px 0 0 15px;
-    border-color: aquamarine;
-    color: black;
-    background-color: aquamarine;
+    border-color: var(--darkorange);
+    color: var(--white);
+    background-color: var(--darkorange);
     font-size: 12px;
     width:30px;
 }
@@ -323,6 +342,7 @@ li
     height:40px;
     padding: 5px 15px 5px 15px;
     margin-left: 5px;
+    background-color: var(--blue);
 }
 
 .purchaseButtons #addToCart 
@@ -397,7 +417,8 @@ li
 
 footer
 {
-    background-color: grey;
+    background-color: var(--blue);
+    color: var(--black);
 }
 
 footer .signUp 
@@ -430,9 +451,9 @@ footer .signUp
     position: absolute;
     height: 30px;
     border-radius: 0 15px 15px 0px;
-    border-color: aquamarine;
-    color: black;
-    background-color: aquamarine;
+    border-color: var(--darkorange);
+    color: var(--white);
+    background-color: var(--darkorange);
     font-size: 12px;
 }
 
