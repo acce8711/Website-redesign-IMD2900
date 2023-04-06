@@ -557,3 +557,146 @@ footer .creditsSocials img
     gap: 20px;
 }
 
+/*cart styling*/
+.cart{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cartItems {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.cartEdit {
+    width: 60%;
+    height: fit-content;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    padding: 10px;
+}
+
+.cartItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cartItem img 
+{
+    aspect-ratio: 1 / 1;
+    width: 20%;
+}
+
+.cartItemDesc {
+    width: 100%;
+}
+
+.cartItemDescRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartItemDescRow2 {
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.cartItemRemove {
+    text-decoration: underline;
+}
+
+.cartEditInteraction
+{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.checkOutBtn {
+    background: var(--black);
+    color: var(--white);
+}
+.cartItemOldPrice {
+    text-decoration: line-through;
+}
+
+/*Cart overview panel styling*/
+.cartOverview {
+    width: 30%;
+    height: fit-content;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cartOverviewRowLine{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boldPTag
+{
+    font-weight: bold;
+}
+
+/*checkout styling*/
+.checkoutEdit {
+    width: 60%;
+    height: fit-content;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+.locationSelectItem {
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.checkoutForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* Remove the default 1.5em left padding for form-check */
+.form-check {
+    margin-left: -1.5em;
+  }
+/* Make radio buttons invisible */
+.locationSelect{
+    display: none;
+  }
+/* input label styling 
+.form-check-label {
+display: block;
+border: 1px rgb(185, 185, 185) solid;
+box-sizing: border-box;
+width: 100%;
+padding: 1vw;
+transition: ease-in 0.2s;
+}*/
+/* Label changes colour on hover to let user know 
+which option they are hovering over on desktop */
+.form-check-label:hover {
+/* box-shadow: 1px 1px 5px 2px rgba(131, 131, 131, 0.75); */
+background-color: rgb(230, 230, 230);
+}
+/* When the invisible radio input is checked, label will change colour instead */
+.locationSelect:checked ~ .form-check-label {
+background-color: rgb(182, 182, 182);
+}
