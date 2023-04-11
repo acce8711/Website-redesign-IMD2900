@@ -13,7 +13,7 @@ function generateProductItems() {
         individualProduct.className = "individualProduct";
         const productImg = document.createElement("img");
         productImg.alt = "Image of product"
-        productImg.src = "Images/ditto.jpg"
+        productImg.src = "Images/grey chair category.png" 
         productImg.className = "individualProductImg"
         const productTitle = document.createElement("h5");
         productTitle.innerHTML = "Product Name";
