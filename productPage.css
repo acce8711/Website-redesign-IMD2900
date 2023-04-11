@@ -195,20 +195,21 @@ img
 .buyButtons .addToCart
 {
     margin-bottom: 10px;
-    color: var(--navyblue);
+    color: var(--black);
     border: 1px solid rgb(95, 95, 95);
     background-color: var(--white);
 }
 
 .addToCart:hover
 {
-    border: 2px solid var(--navyblue);
+    color: var(--darkblue);
+    border: 2px solid var(--darkblue);
 }
 
 .buyButtons .buyItNow
 {
     color: white;
-    background-color: var(--navyblue);
+    background-color: var(--darkblue);
 }
 
 .purchaseButtons button {
