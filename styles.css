@@ -14,11 +14,15 @@
     --black: #111111;
     --gray: #e7e7e7;
     --blue: #00afd7;
-    --darkblue: #00637b;
+    --darkblue: #003e4e;
     --orange: #e45d1d;
-    --darkorange: #cd5018;
+    --darkorange: #b03800;
     --neongreen: #c4d600;
+    --navyblue: #1e006a;
+    --violet: #cc1de3;
+    --lightblue: #dfeaf4;
 }
+
 
 .containerCustom 
 {
@@ -32,9 +36,14 @@ h2, h4
     font-weight: 700;
 }
 
+hr
+{
+    color: var(--white);
+}
+
 a 
 {
-    color: var(--black);
+    color: var(--white);
     text-decoration: none;
     
 }
@@ -58,11 +67,13 @@ li
 
 button
 {
-    transition: opacity 0.5s !important;
+    transition: filter 0.5s !important;
+    font-weight: bold !important;
 }
+
 button:hover
 {
-    opacity: 85%;
+   filter: brightness(85%);
 }
 
 /* Header/navbar */
@@ -71,7 +82,7 @@ button:hover
 {
     height: inherit;
     margin: 0 auto;
-    background-color: var(--blue);
+    background-color: var(--darkblue);
     padding-top:5px;
 }
 
@@ -106,6 +117,8 @@ button:hover
     justify-content: end;
 }
 
+
+
 .navLinkList ul
 {
     float: right;
@@ -117,6 +130,12 @@ button:hover
 {
     display: inline;
     margin-left: 25px;
+}
+
+.navLinkList img
+{
+    max-height: 30px;
+    margin-left: 10px;
 }
 
 .searchBar
@@ -150,7 +169,7 @@ button:hover
 
 .navBar .row-2
 {
-    border-top: 1px solid #414141;
+    border-top: 1px solid #00222d;
     padding-top: 15px;
 }
 
@@ -170,31 +189,67 @@ button:hover
 
 .mainBanner 
 {
-    background-image: url("Images/ditto.jpg");
+    background-image: url("Images/banner.jpg");
+    filter: brightness(90%);
     margin: 0 auto;
-    padding-top: 500px;
-    padding-bottom: 100px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.title
+{
+    display: flex;
+    flex:100%;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+
+.title h1
+{
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    text-shadow: 5px 5px 3px  black;
 }
 
 .mainBanner .bannerItems
 {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    flex:100%;
+    align-items: center;
 }
+
 
 .bannerItems .item .btn
 {
     height:60px;
-    width: 120px;
+    width: 200px;
     border-radius: 15px;
-    margin:10px;
+    margin:30px;
     font-size: 24px;
     text-align: center;
-    padding: 5px 15px;
-    background-color: var(--darkorange);
-    color: var(--white);   
+    padding: 5px 10px;
 }
 
+#shopBtn
+{
+    background-color: var(--darkorange);
+    color: var(--white);
+}
+
+#donateBtn
+{
+    background-color: var(--white);
+    color: var(--black);
+}
 
 /* Reduced Items Carousel */
 
@@ -202,13 +257,34 @@ button:hover
 {
     max-width: 1170px;
     margin:0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sectionHeading
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+/* .carouselReducedItems h2
+{
+    margin-bottom: 20px;
+} */
+
+.colourBlock
+{
+    background-color: var(--blue);
+    width: 80%;
+    height: 5px;
 }
 
 .carousel-inner
 {
     display: flex;
+    padding: 5px;
     padding-left: 0px;
     padding-right: 25px;
 }
@@ -219,6 +295,25 @@ button:hover
     flex: 0 0 calc((100%)/4);
     margin-right: 7px;
 }
+
+.card
+{
+    -webkit-box-shadow: 1px 3px 5px 0px rgb(182, 182, 182);
+    -moz-box-shadow: 1px 3px 5px 0px rgb(182, 182, 182);
+    box-shadow: 1px 3px px 0px rgb(182, 182, 182);
+    transition: transform 0.5s;
+}
+
+.card:hover
+{
+    transform: scale(1.01);
+}
+
+.card h5, span
+{
+    color:black;
+}
+
 
 .img-div
 {
@@ -231,7 +326,7 @@ button:hover
 .img-div img
 {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 200px;
     object-fit: cover;
 }
 
@@ -265,7 +360,7 @@ button:hover
 .giftCard
 {
     margin:0 auto;
-    background-color: var(--gray);
+    background-color: var(--lightblue);
     padding-bottom: 50px;
     padding-top: 50px;
 }
@@ -380,12 +475,25 @@ button:hover
     height:40px;
     padding: 5px 15px 5px 15px;
     margin-left: 5px;
-    background-color: var(--blue);
+}
+
+#buyButton
+{
+    background-color: var(--navyblue);
+    color:white;
 }
 
 .purchaseButtons #addToCart 
 {
     margin-left: 0 !important;
+    background-color: var(--white);
+    border: 1px solid rgb(95, 95, 95);
+    transition: border 0.5s;
+}
+
+#addToCart:hover
+{
+    border: 2px solid var(--navyblue);
 }
 
 
@@ -395,8 +503,8 @@ button:hover
 {
     max-width: 1170px;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 .hoursLocations
@@ -408,6 +516,10 @@ button:hover
     margin-bottom: 50px;
 }
 
+.storeName
+{
+    font-weight: bold;
+}
 
 .hoursLocations .stores, .maps
 {
@@ -432,8 +544,8 @@ button:hover
 .store
 {
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .store .storeInfo
@@ -458,8 +570,8 @@ button:hover
 
 footer
 {
-    background-color: var(--blue);
-    color: var(--black);
+    background-color: var(--darkblue);
+    color: var(--white);
 }
 
 footer .signUp 
@@ -474,6 +586,7 @@ footer .tagline
 {
     font-size: 18px;
     font-weight: bold;
+    color: var(--white);
 }
 
 .signUpBox {
@@ -533,12 +646,22 @@ footer .footerInfo img
 {
     width: 20px;
 }
+.ContactUs img
+{
+    margin-right: 10px;
+}
+
+footer .credits
+{
+    color:var(--white);
+}
 
 footer .creditsSocials
 {
     margin: 0 auto;
     max-width: 1170px;
-    padding: 20px;
+    padding: 0;
+    padding-bottom: 25px;
     display: flex;
     justify-content:space-between;
 }
@@ -546,6 +669,7 @@ footer .creditsSocials
 footer .creditsSocials img
 {
     width: 35px;
+    margin-left: 10px;
 }
 
 

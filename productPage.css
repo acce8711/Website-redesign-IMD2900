@@ -97,6 +97,11 @@ img
     margin-bottom: 0.5em;
 }
 
+.checkmark
+{
+    height:50px;
+}
+
 .availability
 {
     display: flex;
@@ -190,13 +195,20 @@ img
 .buyButtons .addToCart
 {
     margin-bottom: 10px;
-    background-color: var(--blue);
+    color: var(--navyblue);
+    border: 1px solid rgb(95, 95, 95);
+    background-color: var(--white);
+}
+
+.addToCart:hover
+{
+    border: 2px solid var(--navyblue);
 }
 
 .buyButtons .buyItNow
 {
     color: white;
-    background-color: var(--darkblue);
+    background-color: var(--navyblue);
 }
 
 .purchaseButtons button {
@@ -217,4 +229,9 @@ img
 {
     transform: translateX(0);
     transform: translateY(calc(50%)) !important;
+}
+
+hr
+{
+    color: black;
 }

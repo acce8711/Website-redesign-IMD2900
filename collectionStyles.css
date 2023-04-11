@@ -33,6 +33,16 @@
     padding: 40px 15px;
 }*/
 
+.navBar a
+{
+    color:white;
+}
+
+a
+{
+    color: black; 
+}
+
 .content {
     display: flex;
     justify-content: center;
