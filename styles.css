@@ -504,7 +504,7 @@ button:hover
     max-width: 1170px;
     margin: 0 auto;
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .hoursLocations
@@ -519,11 +519,6 @@ button:hover
 .storeName
 {
     font-weight: bold;
-}
-
-.hoursLocations .stores, .maps
-{
-    flex: 50%;
 }
 
 .storeImage
@@ -541,28 +536,57 @@ button:hover
     max-width: 20px;
 }
 
+.stores
+{
+    flex:70%;
+}
 .store
 {
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 50px;
 }
 
+#trainyards
+{
+    margin-top: 30px;
+}
 .store .storeInfo
 {
     margin-left: 10px;
 }
 
-
-
-.maps div
+.hours
 {
-   max-width: 600px;
+    background-color: var(--lightblue);
+    width: 100%;
+    flex:50%;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.maps img
+.openingHoursHeading
 {
-    max-width: inherit;
+    width:100%;
+    max-height: fit-content;
+}
+
+.openingHoursHeading h5
+{
+    text-align: center;
+
+}
+
+.openingHours
+{
+    display: flex;
+}
+
+.openingHours #hoursList
+{
+    margin-left: 20px;
 }
 
 
