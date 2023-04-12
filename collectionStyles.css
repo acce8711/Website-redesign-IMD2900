@@ -50,13 +50,12 @@ a
 
 .contentItems {
     width: 1170px;
-    border: 2px solid pink;
     display: flex;
+    margin-bottom: 50px;
 }
 
 .collCatalogue {
     width: 25%;
-    border: 2px solid purple;
     padding: 80px 0;
 }
 
@@ -124,7 +123,6 @@ a
 
 #individualProducts{
     width: 100%;
-    border: 2px solid red;
 }
 
 .individualProduct {
@@ -148,6 +146,34 @@ a
 .addToCartButton {
     background-color: black;
     color: white;
+}
+
+.productPriceAndInteract {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addToCartButton
+{
+    background-color: var(--darkorange);
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px; 
+}
+
+/*
+.individualProduct:hover .addToCartButton{
+    display: block;
+    cursor: pointer;
+}
+
+.addToCartButton {
+    background-color: black;
+    color: white;
     display: none;
     position: absolute;
     height: fit-content;
@@ -163,12 +189,8 @@ a
     backface-visibility: hidden;
     opacity: 1;
 }
+*/
 
-.individualProduct:hover img, .individualProduct:hover h5, .individualProduct:hover  p {
-    opacity: 50%;
-}
-
-.individualProduct:hover .addToCartButton{
-    display: block;
-    cursor: pointer;
+.productLink:hover{
+    text-decoration: underline;
 }
