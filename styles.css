@@ -211,10 +211,11 @@ button:hover
 
 .title h1
 {
-    color: white;
+    color: rgb(255, 255, 255);
+    z-index: 1;
     font-weight: bold;
-    font-size: 60px;
-    text-shadow: 5px 5px 3px  black;
+    font-size: 72px;
+    text-shadow: 2px 2px 1px #000000, -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000;
 }
 
 .mainBanner .bannerItems
