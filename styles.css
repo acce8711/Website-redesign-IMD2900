@@ -600,6 +600,11 @@ footer
     color: var(--white);
 }
 
+footer a
+{
+    color:white;
+}
+
 footer .signUp 
 {
     padding: 50px;
