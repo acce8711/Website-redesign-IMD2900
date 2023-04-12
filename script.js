@@ -55,5 +55,8 @@ function generateProductItems() {
     }
 }
 
-   
+   function switchImg(smallImg) {
+    smallImg = smallImg.src;
+    document.getElementById("mainImg").src = smallImg;
+   }
       
