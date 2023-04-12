@@ -216,14 +216,14 @@ img
 
 .addToCart:hover
 {
-    color: var(--darkblue);
-    border: 2px solid var(--darkblue);
+    color: var(--darkorange);
+    border: 2px solid var(--darkorange);
 }
 
 .buyButtons .buyItNow
 {
     color: white;
-    background-color: var(--darkblue);
+    background-color: var(--darkorange);
 }
 
 .purchaseButtons button {
