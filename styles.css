@@ -719,7 +719,8 @@ footer .creditsSocials img
     max-width: 1170px;
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .cartEdit {
@@ -793,6 +794,13 @@ footer .creditsSocials img
     padding: 10px;
 }
 
+.dateForms
+{
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    padding: 10px;
+}
+
 .cartOverviewRowLine{
     display: flex;
     justify-content: space-between;
@@ -825,6 +833,8 @@ footer .creditsSocials img
     flex-direction: column;
     gap: 10px;
 }
+
+
 /* Remove the default 1.5em left padding for form-check */
 .form-check {
     margin-left: -1.5em;
@@ -868,4 +878,58 @@ background-color: var(--gray);
 
 .cartHR {
     color: black;
+}
+
+/* Date and Time */
+
+#dateTime h4
+{
+    flex:100%;
+}
+
+.dateForms
+{
+    display: flex;
+    gap:20px;
+}
+
+#dateSelect
+{
+    margin-left: -3px;
+}
+
+#timeSelect
+{
+    height:27.2px;
+    width: 80px;
+    background-color: white;
+    border: 1px solid #9898a1;
+    border-radius: 1.5px;
+    padding:1px;
+}
+
+#timeSelect:hover
+{
+    border-color: #676774;
+}
+
+/* Save and proceed button */
+
+#proceedButtonDiv
+{
+    display: flex;
+    justify-content: end;
+}
+
+#proceedButton {
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    height: 40px;
+    padding: 5px 15px 5px 15px;
+    margin-left: 0 !important;
+    color:white;
+    background-color: var(--darkorange);
+    border: 1px solid rgb(95, 95, 95);
+    transition: border 0.5s;
 }
