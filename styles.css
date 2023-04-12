@@ -711,7 +711,8 @@ footer .creditsSocials img
 .cart{
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: fit-content;
+    min-height: 100vh;
 }
 
 .cartItems {
@@ -848,5 +849,22 @@ background-color: rgb(230, 230, 230);
 }
 /* When the invisible radio input is checked, label will change colour instead */
 .locationSelect:checked ~ .form-check-label {
-background-color: rgb(182, 182, 182);
+background-color: var(--gray);
+}
+.form-check-label {
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+}
+/*styling the individual location containers*/
+.locationSelectItem {
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+}
+
+.right-alignedText {
+    text-align: right;
+}
+
+.cartHR {
+    color: black;
 }

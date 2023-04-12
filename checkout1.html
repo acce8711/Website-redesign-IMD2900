@@ -89,6 +89,62 @@
                     </div>
                 </div>
 
+                <div class="checkoutForm">
+                  <h4>Location</h4>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      id="location1"
+                      class="locationSelect"
+                      name="location"
+                    />
+                    <label class="form-check-label" for="location1"> 
+                        <div class="cartItem locationSelectItem">
+                            <img src="Images/ditto.jpg" alt="image of a cart item" class="cartItemImg">
+                            <div class="cartItemDesc locationDesc">
+                                <div class="cartItemDescRow">
+                                    <p class="boldPTag">Stittsville Store</p>
+                                    <p class="cartItemPrice">(343) 545-0481</p>
+                                </div>
+                                <div class="cartItemDescRow">
+                                    <p>3 Iber Road <br>
+                                      Stittsville, Ontario, Canada <br>
+                                      K2S 1E6</p>
+                                </div>     
+                            </div>
+                        </div>
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      id="location2"
+                      class="locationSelect"
+                      name="location"
+                    />
+                    <label class="form-check-label" for="location2"> 
+                        <div class="cartItem locationSelectItem">
+                            <img src="Images/ditto.jpg" alt="image of a cart item" class="cartItemImg">
+                            <div class="cartItemDesc locationDesc">
+                                <div class="cartItemDescRow">
+                                    <p class="boldPTag">Trainyards Store</p>
+                                    <p class="cartItemPrice">(613) 744-7769</p>
+                                </div>
+                                <div class="cartItemDescRow">
+                                    <p>768 Belfast Road,<br>
+                                        Ottawa, Ontario, Canada<br>
+                                        K1G 0Z5</p>
+                                </div>     
+                            </div>
+                        </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="checkoutForm">
+                  <h4>Location</h4>
+                </div>
                 <!--Div as radio button: https://stackoverflow.com/questions/32935435/use-div-as-radio-button-->
                 <!--
                 <div class="locationSelect">
@@ -99,59 +155,7 @@
                 </div>
                 -->
 
-                <div class="form-check">
-                    <input
-                      type="radio"
-                      name="question1"
-                      id="q1optionD"
-                      value="d"
-                      class="locationSelect"
-                    />
-                    <label class="form-check-label" for="q1optionD"> 
-                        <div class="cartItem">
-                            <img src="Images/ditto.jpg" alt="image of a cart item" class="cartItemImg">
-                            <div class="cartItemDesc locationSelectItem">
-                                <div class="cartItemDescRow">
-                                    <p class="boldPTag">Trainyards Store</p>
-                                    <p class="cartItemPrice">(613) 744-7769</p>
-                                </div>
-                                <div class="cartItemDescRow">
-                                    <p>768 Belfast Road,<br>
-                                        Ottawa, Ontario, Canada<br>
-                                        K1G 0Z5</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </label>
-                  </div>
-
-                  <div class="form-check">
-                    <input
-                      type="radio"
-                      name="question1"
-                      id="location2"
-                      value="d"
-                      class="locationSelect"
-                    />
-                    <label class="form-check-label" for="location2"> 
-                        <div class="cartItem locationSelectItem">
-                            <img src="Images/ditto.jpg" alt="image of a cart item" class="cartItemImg">
-                            <div class="cartItemDesc ">
-                                <div class="cartItemDescRow">
-                                    <p class="boldPTag">Trainyards Store</p>
-                                    <p class="cartItemPrice">(613) 744-7769</p>
-                                </div>
-                                <div class="cartItemDescRow">
-                                    <p>768 Belfast Road,<br>
-                                        Ottawa, Ontario, Canada<br>
-                                        K1G 0Z5</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </label>
-                  </div>
+                
                 
 
                 
@@ -183,14 +187,18 @@
                         </div>
                     </div>
                 </div>
-                <hr>
+                <hr class="cartHR">
                 <div class="cartOverviewRow">
                     <div class="cartOverviewRowLine">
                         <p class="boldPTag">Pickup:</p>
-                        <p></p>
+                        <p class="right-alignedText">
+                          Stittsville Store <br>
+                          3 Iber Road <br>
+                          Stittsville, Ontario, Canada <br>
+                          K2S 1E6</p>
                     </div>
                 </div>
-                <hr>
+                <hr class="cartHR">
                 <div class="cartOverviewRow">
                     <div class="cartOverviewRowLine">
                         <p class="boldPTag">Subtotal:</p>
@@ -201,7 +209,7 @@
                         <p>$39.00</p>
                     </div>
                 </div>
-                <hr>
+                <hr class="cartHR">
                 <div class="cartOverviewRow">
                     <div class="cartOverviewRowLine">
                         <p id="cartTotal" class="boldPTag">Total:</p>
