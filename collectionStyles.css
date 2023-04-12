@@ -127,6 +127,11 @@ a
 
 .individualProduct {
     position: relative;
+    -webkit-box-shadow: 1px 3px 5px 0px rgb(182, 182, 182);
+    -moz-box-shadow: 1px 3px 5px 0px rgb(182, 182, 182);
+    box-shadow: 1px 3px px 0px rgb(182, 182, 182);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .individualProductImg {
