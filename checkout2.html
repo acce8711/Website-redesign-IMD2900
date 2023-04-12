@@ -23,7 +23,7 @@
             <div class="logo">
               <a href="index.html" class="restoreLogo">
                 <img
-                  src="Images/ReStore Logo.avif"
+                  src="Images/ReStore Logo.png"
                   alt="Logo of Habitat for Humanity Greater Ottawa Restore"
                 />
 
@@ -60,14 +60,14 @@
         <div class="navItems row-2">
           <ul>
             <li><a href="collections.html">Shop All</a></li>
-            <li><a href="#">Category 1</a></li>
-            <li><a href="#">Category 2</a></li>
-            <li><a href="#">Category 3</a></li>
-            <li><a href="#">Category 4</a></li>
-            <li><a href="#">Category 5</a></li>
-            <li><a href="#">Category 6</a></li>
-            <li><a href="#">Category 7</a></li>
-            <li><a href="#">Category 8</a></li>
+            <li><a href="products.html">Category 1</a></li>
+            <li><a href="products.html">Category 2</a></li>
+            <li><a href="products.html">Category 3</a></li>
+            <li><a href="products.html">Category 4</a></li>
+            <li><a href="products.html">Category 5</a></li>
+            <li><a href="products.html">Category 6</a></li>
+            <li><a href="products.html">Category 7</a></li>
+            <li><a href="products.html">Category 8</a></li>
           </ul>
           
         </div>
@@ -76,54 +76,86 @@
     
     <section class="cart">
         <div class="breadcrumbTrailCart">
+            <a class="breadcrumb" href="cart.html">Cart</a> 
+            <p>></p>
+            <a class="breadcrumb" href="checkout1.html">Information</a>
+            <p>></p>
+            <a href="#" id="selectedBreadcrumbTrail">Payment</a>
         </div>
         <div class="cartItems">
-            <div class="cartEdit">
-                <div class="cartItem">
-                    <img src="Images/grey chair.png" alt="image of a cart item" class="cartItemImg">
-                    <div class="cartItemDesc">
-                        <div class="cartItemDescRow">
-                            <h5 class="cartItemName">Item Name</h5>
-                            <h4 class="cartItemPrice">$150.00</h5>
+            <div class="checkoutEdit">
+                <div class="checkoutForm">
+                    <h4>Payment</h4>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Card Number</label>
+                        <input class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Name on Card</label>
+                        <input class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="form-group halfWidth">
+                        <div>
+                            <label for="exampleFormControlInput1">Expiration Date (MM/YY)</label>
+                            <input class="form-control" id="exampleFormControlInput1">
                         </div>
-                        <div class="cartItemDescRow">
-                            <p class="cartItemDescText">Description</p>
-                            <p class="cartItemOldPrice">$200</p>
-                        </div>
-                        <div class="cartItemDescRow cartItemDescRow2">
-                            <p class="cartItemDescText">Item counter</p>
-                            <a class="cartItemRemove" href="#">Remove</a>
+                        <div>
+                            <label for="exampleFormControlInput1">Security Code</label>
+                            <input class="form-control" id="exampleFormControlInput1">
                         </div>
                     </div>
                 </div>
-                <div class="cartItem">
-                    <img src="Images/grey chair.png" alt="image of a cart item" class="cartItemImg">
-                    <div class="cartItemDesc">
-                        <div class="cartItemDescRow">
-                            <h5 class="cartItemName">Item Name</h5>
-                            <h4 class="cartItemPrice">$150.00</h5>
+
+                <div class="checkoutForm">
+                    <h4>Billing Address</h4>
+                    <div class="form-group halfWidth">
+                        <div>
+                            <label for="exampleFormControlInput1">First Name</label>
+                            <input class="form-control fullWidth" id="exampleFormControlInput1">
+                        </div> 
+                        <div>
+                            <label for="exampleFormControlInput1">Last Name</label>
+                            <input class="form-control fullWidth" id="exampleFormControlInput1">
+                        </div>              
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Address</label>
+                        <input class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Country</label>
+                        <input class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="form-group thirdWidth">
+                        <div>
+                            <label for="exampleFormControlInput1">City</label>
+                            <input class="form-control" id="exampleFormControlInput1">
+                        </div>   
+                        <div class="form-group">
+                            <label for="inputState">Province</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
                         </div>
-                        <div class="cartItemDescRow">
-                            <p class="cartItemDescText">Description</p>
-                            <p class="cartItemOldPrice">$200</p>
-                        </div>
-                        <div class="cartItemDescRow cartItemDescRow2">
-                            <p class="cartItemDescText">Item counter</p>
-                            <a class="cartItemRemove" href="#">Remove</a>
+                        <div>
+                            <label for="exampleFormControlInput1">Postal Code</label>
+                            <input class="form-control" id="exampleFormControlInput1">
                         </div>
                     </div>
-                </div>
-                <!--Terms and conditions checkbox-->
-                <div class="cartEditInteraction">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">I agree with the <a href="#"><u>Terms of Service</u></a></label>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Phone Number</label>
+                        <input class="form-control" id="exampleFormControlInput1">
                     </div>
-                    <a href="checkout1.html">
-                      <button class="checkOutBtn btn">Proceed to Checkout</button>
-                    </a>
-                    
+                    <div class="cartEditInteraction">
+                        <button class="checkOutBtn btn">Confirm Order</button>
+                    </div>
                 </div>
+
+
+                
+                
+
                 
             </div>
 
@@ -141,7 +173,6 @@
                         </div>
                     </div>
                 </div>
-                <hr class="cartHR">
                 <div class="cartItem">
                     <img src="Images/grey chair.png" alt="image of a cart item" class="cartItemImg">
                     <div class="cartItemDesc">
@@ -158,10 +189,14 @@
                 <div class="cartOverviewRow">
                     <div class="cartOverviewRowLine">
                         <p class="boldPTag">Pickup:</p>
-                        <p></p>
+                        <p class="right-alignedText">
+                          Stittsville Store <br>
+                          3 Iber Road <br>
+                          Stittsville, Ontario, Canada <br>
+                          K2S 1E6</p>
                     </div>
                 </div>
-                <hr>
+                <hr class="cartHR">
                 <div class="cartOverviewRow">
                     <div class="cartOverviewRowLine">
                         <p class="boldPTag">Subtotal:</p>
@@ -183,7 +218,7 @@
         </div>
     </section>
       
-
+    <!--Footer-->
     <footer>
       <div class="signUp">
         <span class="tagline">Be the first to know about special deals!</span>
@@ -271,14 +306,14 @@
           © Habitat for Humanity Greater Ottawa ReStore 2023
         </span>
         <div class="socialIcons">
-                   <a href="#" target="_blank">
+                   <a href="https://www.facebook.com/HabitatCanada" target="_blank">
             <img
               src="Images/facebook white original.png"
               alt="Image of Facebook icon"
               class="iconLink"
             />
           </a>
-          <a href="#" target="_blank">
+          <a href="https://www.instagram.com/habitatgreaterottawa/" target="_blank">
             <img
               src="Images/instagram white original.png"
               alt="Image of Instagram icon"

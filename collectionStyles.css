@@ -120,6 +120,14 @@ a
     font-weight: bold;
 }
 
+.breadcrumbTrailCart {
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 1170px;
+}
+
 
 #individualProducts{
     width: 100%;

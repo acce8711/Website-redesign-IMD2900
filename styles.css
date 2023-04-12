@@ -715,7 +715,8 @@ footer .creditsSocials img
 /*cart styling*/
 .cart{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     height: fit-content;
     min-height: 100vh;
 }
@@ -752,6 +753,7 @@ footer .creditsSocials img
     aspect-ratio: 1 / 1;
     width: 20%;
     object-fit: cover;
+    min-width: 70px;
 }
 
 .cartItemDesc {
@@ -783,8 +785,14 @@ footer .creditsSocials img
 }
 
 .checkOutBtn {
-    background: var(--black);
+    background: var(--darkorange);
     color: var(--white);
+}
+
+.checkOutBtn:hover {
+    background: var(--darkorange);
+    color: var(--white);
+
 }
 .cartItemOldPrice {
     text-decoration: line-through;
@@ -839,6 +847,18 @@ footer .creditsSocials img
     gap: 10px;
 }
 
+/*Text Input Styling*/
+.halfWidth {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.thirdWidth {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
 
 /* Remove the default 1.5em left padding for form-check */
 .form-check {
@@ -938,3 +958,5 @@ background-color: var(--gray);
     border: 1px solid rgb(95, 95, 95);
     transition: border 0.5s;
 }
+
+
