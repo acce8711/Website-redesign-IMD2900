@@ -480,7 +480,7 @@ button:hover
 
 #buyButton
 {
-    background-color: var(--navyblue);
+    background-color: var(--darkblue);
     color:white;
 }
 
@@ -494,7 +494,8 @@ button:hover
 
 #addToCart:hover
 {
-    border: 2px solid var(--navyblue);
+    color: var(--darkblue);
+    border: 2px solid var(--darkblue);
 }
 
 
