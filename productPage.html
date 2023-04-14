@@ -65,14 +65,14 @@
         <div class="navItems row-2">
           <ul>
             <li><a href="collections.html">Shop All</a></li>
-            <li><a href="products.html">Category 1</a></li>
-            <li><a href="products.html">Category 2</a></li>
-            <li><a href="products.html">Category 3</a></li>
-            <li><a href="products.html">Category 4</a></li>
-            <li><a href="products.html">Category 5</a></li>
-            <li><a href="products.html">Category 6</a></li>
-            <li><a href="products.html">Category 7</a></li>
-            <li><a href="products.html">Category 8</a></li>
+            <li><a href="products.html">Bath</a></li>
+            <li><a href="products.html">Furniture</a></li>
+            <li><a href="products.html">Electrical</a></li>
+            <li><a href="products.html">Tools</a></li>
+            <li><a href="products.html">Flooring</a></li>
+            <li><a href="products.html">Lighting</a></li>
+            <li><a href="products.html">Hardware</a></li>
+            <li><a href="products.html">Reduced Items</a></li>
           </ul>
           
         </div>
@@ -80,21 +80,24 @@
     </section>
     <!-- container for main content will have width of 1170px -->
     <div class="containerCustom">
-        <!-- Product -->
+        <!--breadcrumb trail of website -->
         <div class="breadcrumbTrail">
           <a class="breadcrumb" href="index.html">Home</a> 
           <p>/</p>
-          <a class="breadcrumb" href="collections.html">Categories</a>
+          <a class="breadcrumb" href="collections.html">Furniture</a>
           <p>/</p>
-          <a class="breadcrumb" href="products.html">SubCategory</a>
+          <a class="breadcrumb" href="products.html">Seating</a>
           <p>/</p>
-          <a href="#" id="selectedBreadcrumbTrail">Product</a>
+          <a href="#" id="selectedBreadcrumbTrail">Grey Chair</a>
         </div>
+      <!--product container-->
      <section class="product">
+        <!--main product image-->
         <div class="productImg">
            <div class="main-image">
                 <img src="Images/grey chair-3.png" alt="Image of third grey chair" id="mainImg">
            </div>
+           <!--other product images below the main image-->
            <div class="sliderImages">
                 <ul class="slides">
                     <li id="image-3">
@@ -109,6 +112,7 @@
                 </ul>
            </div>
         </div>
+        <!--product description-->
         <div class="productInfo">
             <h2>Grey Chair</h2>
             <h2 class="product-price">$100.00</h2>
@@ -160,29 +164,36 @@
                     </div>
                 </div>
             </div>
+            <!--product quantity counter-->
             <div class="purchaseOptions-product">
-                <div class="quantityBox">
-                    <button class="minusBtn">-</button>
-                    <input type="text" class="quantityText" value="1" min="1" />
-                    <button class="plusBtn">+</button>
-                  </div>  
-                <div class="buyButtons">
-                    <button class="addToCart">Add to Cart</button>
-                    <button class="buyItNow">Buy it Now</button>
-                </div>
+              <div class="chooseQuantityBox">
+                <button class="minusBtn" id="minusBtn" onclick="decrementCounter('quantityText')">-</button>
+                <input type="text" class="quantityText" id="quantityText" value="1" min="1" />
+                <button class="plusBtn" id="plusBtn" onclick="incrementCounter('quantityText')">+</button>
+              </div>   
+              <!--product purchase buttons-->           
+              <div class="buyButtons">
+                <a href="cart.html">
+                  <button class="addToCart">Add to Cart</button>
+                </a>
+                <a href="cart.html">
+                  <button class="buyItNow">Buy it Now</button>
+                </a>
+              </div>
             </div>
         </div>
         </section>
 
         <hr/>
 
-     <!-- Product Carousel -->
+     <!--Related Product Carousel -->
         <section class="carouselReducedItems">
-        <h3 id="relatedItemsHeading">
-          Related Items 
-        </h3>
+        <a href="products.html" class="underlineSelect">
+          <h3 id="relatedItemsHeading"> Related Items </h3>
+        </a>
         <div id="productCarousel" class="carousel">
           <div class="carousel-inner">
+            <!--related product-->
             <div class="carousel-item active">
               <div class="card">
                 <div class="img-div">
@@ -200,6 +211,7 @@
                 </div>
               </div>
             </div>
+            <!--related product-->
             <div class="carousel-item">
               <div class="card">
                 <div class="img-div">
@@ -234,6 +246,7 @@
                 </div>
               </div>
             </div>
+            <!--related product-->
             <div class="carousel-item ">
               <div class="card">
                 <div class="img-div">
@@ -251,6 +264,7 @@
                 </div>
               </div>
             </div>
+            <!--related product-->
             <div class="carousel-item ">
               <div class="card">
                 <div class="img-div">
@@ -268,6 +282,7 @@
                 </div>
               </div>
             </div>
+            <!--related product-->
             <div class="carousel-item">
               <div class="card">
                 <div class="img-div">
@@ -285,6 +300,7 @@
                 </div>
               </div>
             </div>
+            <!--related product-->
             <div class="carousel-item">
               <div class="card">
                 <div class="img-div">
@@ -302,6 +318,7 @@
                 </div>
               </div>
             </div>
+            <!--related product-->
             <div class="carousel-item">
               <div class="card">
                 <div class="img-div">

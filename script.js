@@ -1,14 +1,11 @@
 var numProducts = 12;
 
-
-
 generateProductItems();
 
-//function generates buttons for the themes
+//function generates individual products for the products page
 function generateProductItems() {
-    //for loop creates 6 theme buttons and inserts them into the themeBox div in the html file
+    //for loop creates 12 products and inserts them into the products page
     for (let i = 0; i < numProducts; i++) {
-        //creating a button element and assigning attribute values
         const individualProduct = document.createElement("div");
         individualProduct.className = "individualProduct";
         const productLinkImg = document.createElement("a");
@@ -22,41 +19,61 @@ function generateProductItems() {
         productLinkTitle.className = "productLink";
         productLinkTitle.href = "productPage.html";
         const productTitle = document.createElement("h5");
-        productTitle.innerHTML = "Product Name";
+        productTitle.innerHTML = "Grey Chair";
         productTitle.className = "productItemName";
         const productLocation = document.createElement("p");
-        productLocation.innerHTML = "Product Location";
+        productLocation.innerHTML = "Trainyards";
         productLocation.className = "productItemLocation";
         const productPriceAndInteract = document.createElement("div");
         productPriceAndInteract.className = "productPriceAndInteract";
         const productPrice = document.createElement("p");
         productPrice.innerHTML = "$20.99";
         productPrice.className = "productItemPrice";
+        const buttonContainer = document.createElement("a");
+        buttonContainer.href = "cart.html";
         const addToCart = document.createElement("button");
         addToCart.className = "addToCartButton";
         addToCart.innerHTML = "Add to Cart";
 
-
-
+        //attaching child elements to their parent elements
+        buttonContainer.appendChild(addToCart);
         productLinkImg.appendChild(productImg);
         productLinkTitle.appendChild(productTitle);
         productPriceAndInteract.appendChild(productPrice);
-        productPriceAndInteract.appendChild(addToCart);
-
+        productPriceAndInteract.appendChild(buttonContainer);
         individualProduct.appendChild(productLinkImg);
         individualProduct.appendChild(productLinkTitle);
         individualProduct.appendChild(productLocation);
         individualProduct.appendChild(productPriceAndInteract);
 
 
-        //appending the button to the html 
+        //appending the individual product to the products page
         const element = document.getElementById("individualProducts");
         element.appendChild(individualProduct);
     }
 }
 
-   function switchImg(smallImg) {
+//function will switch out the current image in the product page
+function switchImg(smallImg) {
     smallImg = smallImg.src;
     document.getElementById("mainImg").src = smallImg;
-   }
+}
       
+//function will increment the quantity counter
+function incrementCounter(idName)
+{
+    var value = parseInt(document.getElementById(idName).value);
+    value = value + 1;
+    document.getElementById(idName).value = value;
+}
+
+//function will decrement the quantity counter
+function decrementCounter(idName)
+{
+    if(document.getElementById("quantityText").value > 1)
+    {
+        var value = parseInt(document.getElementById(idName).value);
+        value = value - 1;
+        document.getElementById(idName).value = value;
+    }
+}

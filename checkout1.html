@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  </head>
+    <!--Linking Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <!--Stylesheet-->
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="collectionStyles.css" />
@@ -14,8 +14,8 @@
     </title>
   </head>
   <body>
-    <!-- Navigation Header -->
 
+    <!-- Navigation Header -->
     <section class="header">
       <nav class="navBar">
         <div class="navItems row-1">
@@ -26,7 +26,6 @@
                   src="Images/ReStore Logo.png"
                   alt="Logo of Habitat for Humanity Greater Ottawa Restore"
                 />
-
               </a>
             </div>
             <div class="search">
@@ -57,45 +56,53 @@
             
           </div>
         </div>
+        <!--Second nav row that contains the categories-->
         <div class="navItems row-2">
           <ul>
             <li><a href="collections.html">Shop All</a></li>
-            <li><a href="products.html">Category 1</a></li>
-            <li><a href="products.html">Category 2</a></li>
-            <li><a href="products.html">Category 3</a></li>
-            <li><a href="products.html">Category 4</a></li>
-            <li><a href="products.html">Category 5</a></li>
-            <li><a href="products.html">Category 6</a></li>
-            <li><a href="products.html">Category 7</a></li>
-            <li><a href="products.html">Category 8</a></li>
-          </ul>
-          
+            <li><a href="products.html">Bath</a></li>
+            <li><a href="products.html">Furniture</a></li>
+            <li><a href="products.html">Electrical</a></li>
+            <li><a href="products.html">Tools</a></li>
+            <li><a href="products.html">Flooring</a></li>
+            <li><a href="products.html">Lighting</a></li>
+            <li><a href="products.html">Hardware</a></li>
+            <li><a href="products.html">Reduced Items</a></li>
+          </ul>    
         </div>
       </nav>
     </section>
     
+    <!--Checkout Container-->
     <section class="cart">
+      <!--checkout process trail-->
       <div class="breadcrumbTrailCart">
         <a class="breadcrumb" href="cart.html">Cart</a> 
         <p>></p>
         <a id="selectedBreadcrumbTrail">Information</a>
       </div>
+        <!--checkout items-->
         <div class="cartItems">
             <div class="checkoutEdit">
+                <!--contact info container-->
                 <div class="checkoutForm">
                     <h4>Contact Info</h4>
+                    <!--Email entry-->
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Email</label>
                         <input class="form-control" id="exampleFormControlInput1">
                     </div>
+                    <!--Phone entry-->
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Phone</label>
                         <input class="form-control" id="exampleFormControlInput1">
                     </div>
                 </div>
 
+                <!--Location container-->
                 <div class="checkoutForm">
                   <h4>Location</h4>
+                  <!--Location 1 option-->
                   <div class="form-check">
                     <input
                       type="radio"
@@ -120,7 +127,7 @@
                         </div>
                     </label>
                   </div>
-
+                  <!--Location 2 Option-->
                   <div class="form-check">
                     <input
                       type="radio"
@@ -147,9 +154,11 @@
                   </div>
                 </div>
 
+                <!--Date and Time select container-->
                 <div class="checkoutForm" id="dateTime">
                   <h4>Date and Time</h4>
                   <div class="dateForms">
+                    <!--date select-->
                     <div class="dateForm">
                       <h6>
                         <strong>
@@ -159,6 +168,7 @@
                       <label for="dateSelect" id="dateLabel"></label>
                       <input type="date" id="dateSelect">
                     </div>
+                    <!--time select-->
                     <div class="dateForm">
                       <h6>
                         <strong>
@@ -190,25 +200,13 @@
                   <a href="checkout2.html">
                     <button class="checkOutBtn btn">Save and Continue</button>
                   </a>
-                </div>
-                <!--Div as radio button: https://stackoverflow.com/questions/32935435/use-div-as-radio-button-->
-                <!--
-                <div class="locationSelect">
-                    <label class="labl">
-                        <input type="radio" name="radioname" value="another" />
-                        <div>Small</div>
-                    </label>
-                </div>
-                -->
-
-                
-                
-
-                
+                </div>                
             </div>
 
+            <!--cart overview container-->
             <div class="cartOverview">
                 <p class="boldPTag">2 Items</p>
+                <!--cart item 1-->
                 <div class="cartItem">
                     <img src="Images/grey chair.png" alt="image of a cart item" class="cartItemImg">
                     <div class="cartItemDesc">
@@ -221,6 +219,7 @@
                         </div>
                     </div>
                 </div>
+                <!--cart item 2-->
                 <div class="cartItem">
                     <img src="Images/grey chair.png" alt="image of a cart item" class="cartItemImg">
                     <div class="cartItemDesc">
@@ -234,17 +233,19 @@
                     </div>
                 </div>
                 <hr class="cartHR">
+                <!--Pickup info-->
                 <div class="cartOverviewRow">
                     <div class="cartOverviewRowLine">
                         <p class="boldPTag">Pickup:</p>
                         <p class="right-alignedText">
-                          Stittsville Store <br>
+                          <strong>Stittsville Store</strong><br>
                           3 Iber Road <br>
                           Stittsville, Ontario, Canada <br>
                           K2S 1E6</p>
                     </div>
                 </div>
                 <hr class="cartHR">
+                <!--subtotal and tax info-->
                 <div class="cartOverviewRow">
                     <div class="cartOverviewRowLine">
                         <p class="boldPTag">Subtotal:</p>
@@ -256,6 +257,7 @@
                     </div>
                 </div>
                 <hr class="cartHR">
+                <!--total info-->
                 <div class="cartOverviewRow">
                     <div class="cartOverviewRowLine">
                         <p id="cartTotal" class="boldPTag">Total:</p>
