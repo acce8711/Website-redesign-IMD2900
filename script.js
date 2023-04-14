@@ -77,3 +77,19 @@ function decrementCounter(idName)
         document.getElementById(idName).value = value;
     }
 }
+
+//function makes sure only one price checkbox is marked at a time
+function priceCheck(checkbox) {
+    var checkboxes = document.getElementsByName("price");
+    checkboxes.forEach((item) => {
+        if(item !== checkbox) item.checked = false;
+    })
+}
+
+//function makes sure only one price checkbox is marked at a time
+function locationCheck(checkbox) {
+    var checkboxes = document.getElementsByName("location");
+    checkboxes.forEach((item) => {
+        if(item !== checkbox) item.checked = false;
+    })
+}
