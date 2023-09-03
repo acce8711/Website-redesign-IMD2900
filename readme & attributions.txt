@@ -7,4 +7,5 @@ All images taken from https://restoregoshop.ca and https://habitatgo.com/restore
 
 Icons used:
 Evericons
+Material Symbols
 Some were originally made by us
